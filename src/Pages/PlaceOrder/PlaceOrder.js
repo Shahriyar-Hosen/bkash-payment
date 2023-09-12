@@ -7,6 +7,7 @@ import AddCardItems from "../../Card/AddCardItems/AddCardItems";
 import useAuth from "../../Hooks/useAuth";
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
+import BKashIcon from "../../images/Icon/BKash-Icon2.png";
 import "./PlaceOrder.css";
 
 const PlaceOrder = () => {
@@ -162,7 +163,9 @@ const PlaceOrder = () => {
               </tbody>
             </table>
           </div>
-        ) : null}
+        ) : (
+          <div className="w-75 min-vh-100"></div>
+        )}
 
         {/* Customer Information  */}
         <div className="pt-5 pb-5 w-25 border-start border-info pl-3 ">
@@ -220,11 +223,14 @@ const PlaceOrder = () => {
 
               <div>
                 <button
-                  className="text-black mt-4 px-2 py-2 rounded-lg  text-lg bg-[#aff6ff] hover:bg-[#48cbc9]"
+                  className="mt-4 p-2 rounded submit-icon bg-[#e2136e] "
                   // onClick={triggerBkash}
                   type="submit"
                 >
-                  Pay with bKash
+                  <img src={BKashIcon} alt="Bkash Logo" />
+                  <span className="text-white text-xl px-1">
+                    Pay with bKash
+                  </span>
                 </button>
               </div>
             </form>

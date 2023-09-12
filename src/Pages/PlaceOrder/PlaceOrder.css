@@ -11,3 +11,14 @@
 .alert {
   background-color: blueviolet;
 }
+
+.submit-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.submit-icon img {
+  width: 75px;
+}
