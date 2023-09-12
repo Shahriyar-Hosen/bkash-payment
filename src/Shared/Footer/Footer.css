@@ -1,0 +1,25 @@
+.footer {
+    background-color: #232323;
+    color: white;
+}
+
+.border-style {
+    border: 2px solid #FF4A17;
+    border-radius: 30px;
+}
+
+.subscribe-field {
+    border: 1px solid #FF4A17;
+    padding: 1.5%;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    margin-top: 3%;
+    width: 100%;
+    height: 45px;
+}
+
+;
+
+.text-highlight {
+    color: #FF4A17;
+}

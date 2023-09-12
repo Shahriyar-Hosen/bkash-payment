@@ -1,0 +1,90 @@
+.top-banner {
+    background: linear-gradient(rgba(9, 27, 87, 0.74), rgba(27, 26, 26, 0.76)), url(../../images/banner-1.jpg);
+    background-position: center;
+    background-size: 100vw 120vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.top-section {
+    padding: 250px;
+}
+
+.explore-btn {
+    background-color: #c03813;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border: 2px solid #c03813;
+    border-radius: 5px;
+}
+
+.explore-btn:hover {
+    background-color: transparent;
+    border: 2px solid #c03813;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.brnad img {
+    width: 150px;
+}
+
+.brnad img:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer {
+    overflow: hidden;
+}
+
+.offer img:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+#customAlert {
+    position: fixed;
+    top: auto;
+    bottom: 15px;
+    left: auto;
+    right: 0;
+    z-index: 999;
+    color: white;
+    display: none;
+    background-color: green;
+    /* height: 60px; */
+    border-right: 5px solid greenyellow;
+    padding: 10px 30px;
+}
+
+.select-option {
+    font-size: 18px;
+}
+
+.select-option:focus {
+    border: 30px;
+    /* background-color: red; */
+}
+
+.select-option option {
+    border: none;
+}
+
+option:hover {
+    background-color: red;
+}
+
+;
+
+#alert-box {
+
+    padding: 10px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .top-section {
+        padding: 100px;
+    }
+}

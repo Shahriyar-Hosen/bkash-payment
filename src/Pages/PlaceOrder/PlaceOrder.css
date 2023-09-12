@@ -1,0 +1,11 @@
+.form-design input{
+    margin-top: 10px;
+    border: 2px solid #DCBB87 ;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+}
+
+.alert{
+    background-color: blueviolet;
+}

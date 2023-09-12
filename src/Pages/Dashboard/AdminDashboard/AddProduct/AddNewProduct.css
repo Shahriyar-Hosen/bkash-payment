@@ -1,0 +1,33 @@
+.bg-t {
+    background-color: rgba(6, 6, 41, 0.774);
+}
+
+/* .add-banner{
+    background-image: url('../../Images/add-service-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+.box-design {
+    background-color: rgba(34, 34, 63, 0.842);
+}
+
+.tittle {
+    color: #DCBB87;
+    margin-bottom: 25px;
+
+}
+
+.d-from {
+    background-color: #ffe4c1;
+    border-radius: 20px;
+    padding: 20px 30px;
+    width: 80%;
+}
+
+.d-from input {
+    border: 1px solid #FF4A17;
+    padding: 10px;
+    border-radius: 5px;
+}

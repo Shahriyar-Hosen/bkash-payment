@@ -1,0 +1,53 @@
+.card-design {
+    border-radius: 10px;
+}
+
+.card-design:hover {
+    transform: scale(1.08);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img {
+    position: relative;
+}
+
+.view-icon {
+    display: none;
+    position: absolute;
+    width: 91%;
+    height: 86%;
+    top: 0;
+    background-color: rgba(131, 131, 131, 0.493);
+    color: #ffffff;
+
+}
+
+.card-img:hover .view-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-edit {
+    width: 100%;
+    height: 200px;
+}
+
+.link-d {
+    text-decoration: none;
+    color: white;
+}
+
+.link-d:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.btn-cart:hover {
+    color: #FF4A17;
+    /* padding: .3rem .5rem;
+    background-color: #FF4A17;
+    border: solid #FF4A17;
+    border-radius: 5px;
+    color: white; */
+}

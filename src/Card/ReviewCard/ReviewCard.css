@@ -1,0 +1,7 @@
+/* .card-size{
+    min-height: 320px;
+} */
+.tex-overflow{
+    height: 85px; 
+    overflow: hidden;
+}

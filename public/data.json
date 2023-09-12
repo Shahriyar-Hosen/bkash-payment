@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-2.jpg",
+        "productName": "Red Digital Camera",
+        "price": 200
+    },
+    {
+        "id": 2,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-3.jpg",
+        "productName": "Axor Digital Camera",
+        "price": 300
+    },
+    {
+        "id": 3,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-8.jpg",
+        "productName": "Plus Coolpix SS3",
+        "price": 250
+    },
+    {
+        "id": 4,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-7.jpg",
+        "productName": "Retro Pro 600",
+        "price": 280
+    },
+    {
+        "id": 5,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-16.jpg",
+        "productName": "Silver DSLR Camera",
+        "price": 750
+    },
+    {
+        "id": 6,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-15.jpg",
+        "productName": "Smart 4k Camera",
+        "price": 650
+    },
+    {
+        "id": 7,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-10.jpg",
+        "productName": "Nikdi DSLR Camera",
+        "price": 750
+    },
+    {
+        "id": 8,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-11.jpg",
+        "productName": "Axor Digital Camera (pink)",
+        "price": 699
+    },
+    {
+        "id": 9,
+        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-12.jpg",
+        "productName": "Neko Digital Camera",
+        "price": 599
+    }
+]

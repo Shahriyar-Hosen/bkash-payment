@@ -1,0 +1,12 @@
+.team-member .member-details{
+    background-color: #ffffff;
+    width: 85%;
+    margin-top: -15%;
+    position: relative;
+    box-shadow: 8px 8px 20px gray;
+    opacity: 0;
+}
+.team-member:hover .member-details {
+    opacity: 100;
+    transition: 1.3s ease-in-out;
+}
