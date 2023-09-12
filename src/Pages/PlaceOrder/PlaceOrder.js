@@ -130,104 +130,109 @@ const PlaceOrder = () => {
   };
 
   return (
-    <div>
+    <main>
       <Header />
       {error && <h1>{error?.message}</h1>}
       {loading && <h1>Loading</h1>}
-      {cartDetails.length ? (
-        <div>
-          <table className="container my-5">
-            <thead className="">
-              <tr className="text-light text-black text-center fs-6 fw-bold">
-                <td className="p-2 w-20">SL No.</td>
-                <td className="p-2 w-28">Image</td>
-                <td className="p-2">Product</td>
-                <td className="p-2">Quantity</td>
-                <td className="p-2">Unit Price</td>
-                <td className="p-2">Total Price</td>
-              </tr>
-            </thead>
-            <tbody>
-              {cartDetails.map((product) => (
-                <AddCardItems
-                  key={product?._id}
-                  product={product}
-                  removeItems={removeItems}
+
+      <section className="d-flex container gap-5">
+        {cartDetails.length ? (
+          <div className="w-75 min-vh-100">
+            <table className="container my-5">
+              <thead className="">
+                <tr className="text-light text-black text-center fs-6 fw-bold">
+                  <td className="p-2 w-20">SL No.</td>
+                  <td className="p-2 w-28">Image</td>
+                  <td className="p-2">Product</td>
+                  <td className="p-2">Quantity</td>
+                  <td className="p-2">Unit Price</td>
+                  <td className="p-2">Total Price</td>
+                </tr>
+              </thead>
+              <tbody>
+                {cartDetails.map((product) => (
+                  <AddCardItems
+                    key={product?._id}
+                    product={product}
+                    removeItems={removeItems}
+                  >
+                    {" "}
+                  </AddCardItems>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : null}
+
+        {/* Customer Information  */}
+        <div className="pt-5 pb-5 w-25 border-start border-info pl-3 ">
+          <section className="mx-auto form-design ">
+            <h3 className="text-light text-black  text-2xl mb-4 fw-bold">
+              Provide Your Information:
+            </h3>
+            <form
+              onSubmit={handleSubmit(
+                cartDetails.length > 0 ? onSubmit : onAlert
+              )}
+            >
+              <div className="d-flex gap-3 w-100">
+                <div>
+                  <p className="text-left">Customer Name:</p>
+                  <p className="text-left mt-3">Customer Email:</p>
+                  <p className="text-left mt-3">Order Date:</p>
+                  <p className="text-left mt-3">Phone Number:</p>
+                  <p className="text-left mt-3">Delivery Address:</p>
+                </div>
+                <div>
+                  <input
+                    value={user.displayName}
+                    placeholder="Enter your name"
+                    {...register("firstName")}
+                  />
+                  <br />
+                  <input
+                    type="email"
+                    value={user.email}
+                    placeholder="Enter your email"
+                    {...register("email")}
+                  />
+                  <br />
+                  <input
+                    type="date"
+                    id="theDate"
+                    placeholder="Order Date"
+                    {...register("orderDate")}
+                  />
+                  <br />
+                  <input
+                    type="number"
+                    placeholder="Phone Number"
+                    {...register("phone")}
+                  />
+                  <br />
+                  <input
+                    type="address"
+                    placeholder="Address"
+                    {...register("address")}
+                  />
+                </div>
+              </div>
+
+              <div>
+                <button
+                  className="text-black mt-4 px-2 py-2 rounded-lg  text-lg bg-[#aff6ff] hover:bg-[#48cbc9]"
+                  // onClick={triggerBkash}
+                  type="submit"
                 >
-                  {" "}
-                </AddCardItems>
-              ))}
-            </tbody>
-          </table>
+                  Pay with bKash
+                </button>
+              </div>
+            </form>
+          </section>
         </div>
-      ) : null}
-
-      {/* Customer Information  */}
-      <div className="container row mx-auto my-5 pt-5 pb-5">
-        <section className="col-lg-6  my-4 mx-auto form-design ">
-          <h3 className="text-light text-black  text-3xl mb-4 fw-bold">
-            Provide Your Information:
-          </h3>
-          <form
-            onSubmit={handleSubmit(cartDetails.length > 0 ? onSubmit : onAlert)}
-          >
-            <div className="d-flex gap-3 w-100">
-              <div>
-                <p className="text-left">Customer Name:</p>
-                <p className="text-left mt-3">Customer Email:</p>
-                <p className="text-left mt-3">Order Date:</p>
-                <p className="text-left mt-3">Phone Number:</p>
-                <p className="text-left mt-3">Delivery Address:</p>
-              </div>
-              <div>
-                <input
-                  value={user.displayName}
-                  placeholder="Enter your name"
-                  {...register("firstName")}
-                />
-                <br />
-                <input
-                  type="email"
-                  value={user.email}
-                  placeholder="Enter your email"
-                  {...register("email")}
-                />
-                <br />
-                <input
-                  type="date"
-                  id="theDate"
-                  placeholder="Order Date"
-                  {...register("orderDate")}
-                />
-                <br />
-                <input
-                  type="number"
-                  placeholder="Phone Number"
-                  {...register("phone")}
-                />
-                <br />
-                <input
-                  type="address"
-                  placeholder="Address"
-                  {...register("address")}
-                />
-              </div>
-            </div>
-
-            <div>
-              <button
-                className="text-black mt-4 px-2 py-2 rounded-lg  text-lg bg-[#aff6ff] hover:bg-[#48cbc9]"
-                // onClick={triggerBkash}
-                type="submit"
-              >
-                Pay with bKash
-              </button>
-            </div>
-          </form>
-        </section>
-      </div>
+      </section>
       <Footer />
-    </div>
+    </main>
   );
 };
 

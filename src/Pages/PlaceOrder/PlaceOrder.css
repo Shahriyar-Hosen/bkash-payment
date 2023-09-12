@@ -1,6 +1,7 @@
 .form-design input {
   margin-top: 10px;
-  min-width: 300px;
+  width: 100%;
+  max-width: 300px;
   border-bottom: 2px solid skyblue;
 }
 .form-design input:focus {
