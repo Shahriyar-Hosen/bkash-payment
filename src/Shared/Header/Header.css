@@ -49,19 +49,17 @@
 
 .btn-all {
   padding: 0.3rem 1rem;
-  background-color: #191a1d;
-  border: solid #191a1d;
-  border-radius: 10px;
+  background-color: cyan;
+  border: solid cyan;
+  border-radius: 7px;
   font-weight: 600;
-  color: white;
+  color: black;
 }
 
 .btn-all:hover {
-  background-color: white;
-  border-radius: 25px;
-  border: solid #191a1d;
+  border-radius: 10px;
+  border: solid #00d3d3;
   font-weight: 600;
-  color: #191a1d;
   transition: 0.5s ease-in-out;
 }
 

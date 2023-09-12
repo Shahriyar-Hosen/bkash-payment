@@ -13,7 +13,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
 }
 
 .tittle {
@@ -33,14 +32,15 @@
   outline: none;
 }
 
-.d-from button {
+.d-from .from-btn {
   width: 100%;
   background: cyan;
   padding: 7px 0;
   border-radius: 5px;
+  color: black;
 }
 
-.d-from button:hover {
+.d-from .from-btn:hover {
   background: greenyellow;
   transition: 0.5s all;
 }

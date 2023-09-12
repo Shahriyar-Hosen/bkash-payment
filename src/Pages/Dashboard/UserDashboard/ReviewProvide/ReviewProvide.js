@@ -26,7 +26,10 @@ const ReviewProvide = () => {
         Please Give your <br />
         <span className="text-cyan-500"> Feedback!</span>
       </h1>
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col d-from ">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col d-from mt-5"
+      >
         <input
           className="w-100"
           type="text"
@@ -56,7 +59,9 @@ const ReviewProvide = () => {
           placeholder="Give your rating between 1 to 5"
         />
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className="from-btn">
+          Submit
+        </button>
       </form>
     </div>
   );
