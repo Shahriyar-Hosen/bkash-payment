@@ -1,38 +1,39 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
-import { Button } from "react-bootstrap";
 import {
   faArrowRightArrowLeft,
   faAward,
   faTruck,
   faUserShield,
 } from "@fortawesome/free-solid-svg-icons";
-import "./Home.css";
-import Reviews from "../Reviews/Reviews";
-import Header from "../../Shared/Header/Header";
-import Footer from "../../Shared/Footer/Footer";
-import useProducts from "../../Hooks/useProducts";
-import ProductCard from "../../Card/ProductCard/ProductCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CircularProgress from "@mui/material/CircularProgress";
+import Stack from "@mui/material/Stack";
+import React, { useState } from "react";
+import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import canon from "../../images/brand-logo/Canon-Logo.png";
-import nikon from "../../images/brand-logo/nikon-logo.png";
-import philips from "../../images/brand-logo/philips-logo.png";
-import samasung from "../../images/brand-logo/samasung-logo.png";
-import panasonic from "../../images/brand-logo/panasonic-logo.png";
-import offerBanner6 from "../../images/banner-6.png";
-import offerBanner7 from "../../images/banner-7.png";
-import Stack from "@mui/material/Stack";
-import CircularProgress from "@mui/material/CircularProgress";
-import AddToCard from "../../Notify/AddToCard/AddToCard";
+import "slick-carousel/slick/slick.css";
+import ProductCard from "../../Card/ProductCard/ProductCard";
 import SelectInput from "../../Component/FilterOption/FilterOption";
+import useProducts from "../../Hooks/useProducts";
+import AddToCard from "../../Notify/AddToCard/AddToCard";
+import Footer from "../../Shared/Footer/Footer";
+import Header from "../../Shared/Header/Header";
+import offerBanner6 from "../../images/banner-6.jpg";
+import offerBanner7 from "../../images/banner-7.jpg";
+import book1 from "../../images/brand-logo/book-1.jpg";
+import book2 from "../../images/brand-logo/book-2.jpg";
+import book3 from "../../images/brand-logo/book-3.jpg";
+import book4 from "../../images/brand-logo/book-4.jpg";
+import book5 from "../../images/brand-logo/book-5.jpg";
+import Reviews from "../Reviews/Reviews";
+import "./Home.css";
 
 const Home = () => {
   const [products, productsIsLoading] = useProducts();
   const [selectedOption, setSelectedOption] = useState();
-  var settings = {
+
+  const settings = {
     dots: false,
     infinite: true,
     slidesToShow: 4,
@@ -50,6 +51,7 @@ const Home = () => {
     autoplaySpeed: 2000,
     pauseOnHover: true,
   };
+
   if (products.length === 0) {
     return (
       <Stack
@@ -60,6 +62,7 @@ const Home = () => {
       </Stack>
     );
   }
+
   const filterByPrice = (a, b) => {
     if (selectedOption === "Low to High") {
       return a.price - b.price;
@@ -77,42 +80,42 @@ const Home = () => {
       {/* Top Banner */}
       <div className="top-section top-banner">
         <h1 className="md:text-6xl sm:text-sm text-white text-center ">
-          Capture Your <br /> <span className=""> Beautyfull Moments </span>
+          Dive into Our <br /> <span className=""> E-Book Collection </span>{" "}
+          Today!
         </h1>
         <p className=" md:text-xl sm:text-sm text-white text-center mt-3">
-          {" "}
-          PixaCam is modern camera selling company in the world. We sell brand
-          new and latest camera at a reasonable price.{" "}
+          Baitul Hikmah- Your Gateway to Timeless Wisdom – Download the E-Book
+          Today!
         </p>
         <div className="flex justify-center p-12">
           <Button className="explore-btn "> Explore Now</Button>
         </div>
       </div>
 
-      {/* Popular Brand */}
+      {/* Popular Books */}
 
       <div className="mb-5 container">
         <h1 className="text-2xl font-bold text-center mt-5">
-          POPULAR <span className="text-color">BRANDS</span>
+          POPULAR <span className="text-color">BOOKS</span>
         </h1>
         <Slider
           {...settings}
           className=" container md:gap-2 flex justufy-center brnad"
         >
           <div className=" p-3  ">
-            <img className="ms-auto me-auto" src={canon} alt="fdg" />
+            <img className="ms-auto me-auto" src={book1} alt="fdg" />
           </div>
           <div className=" p-3">
-            <img className="ms-auto me-auto" src={nikon} alt="dfg" />
+            <img className="ms-auto me-auto" src={book2} alt="dfg" />
           </div>
           <div className="p-3">
-            <img className="ms-auto me-auto" src={panasonic} alt="dfg" />
+            <img className="ms-auto me-auto" src={book3} alt="dfg" />
           </div>
           <div className="p-3">
-            <img className="ms-auto me-auto" src={samasung} alt="dfg" />
+            <img className="ms-auto me-auto" src={book4} alt="dfg" />
           </div>
           <div className="p-3">
-            <img className="ms-auto me-auto" src={philips} alt="dfg" />
+            <img className="ms-auto me-auto" src={book5} alt="dfg" />
           </div>
         </Slider>
       </div>
@@ -210,16 +213,14 @@ const Home = () => {
           <div className="w-100 me-auto ms-auto offer mb-4">
             <img src={offerBanner6} alt="" />
           </div>
-          <div className="w-100 me-auto ms-auto  offer ">
+          <div className="w-100 me-auto ms-auto offer mb-4">
             <img src={offerBanner7} alt="" />
           </div>
         </div>
       </div>
 
       {/* Reviews Section  */}
-      <div>
-        <Reviews />
-      </div>
+      <Reviews />
 
       {/* Alert  */}
       <AddToCard></AddToCard>
