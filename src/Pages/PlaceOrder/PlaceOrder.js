@@ -33,7 +33,7 @@ const PlaceOrder = () => {
     },
     bkashScriptURL:
       "https://scripts.sandbox.bka.sh/versions/1.2.0-beta/checkout/bKash-checkout-sandbox.js",
-    amount: 1,
+    amount: 49,
     onCreatePayment: async (paymentRequest) => {
       // call your API with the payment request here
       return await fetch(
