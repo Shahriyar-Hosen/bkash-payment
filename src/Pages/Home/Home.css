@@ -12,18 +12,20 @@
 }
 
 .explore-btn {
-  background-color: #c03813;
+  background-color: cyan;
   white-space: nowrap;
   padding: 10px 15px;
-  border: 2px solid #c03813;
+  border: 2px solid cyan;
   border-radius: 5px;
+  color: navy;
 }
 
 .explore-btn:hover {
   background-color: transparent;
-  border: 2px solid #c03813;
+  border: 2px solid cyan;
   transition: 0.5s;
   font-weight: 600;
+  color: whitesmoke;
 }
 
 .brnad img {
