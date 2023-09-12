@@ -125,13 +125,7 @@ const PlaceOrder = () => {
         });
     }
   };
-  // if (loading) {
-  //   return <h1>loading</h1>;
-  // }
 
-  // if (error) {
-  //   return <h1>{error?.message}</h1>;
-  // }
   const onAlert = () => {
     alert("Please add at lest one product");
   };
@@ -149,7 +143,7 @@ const PlaceOrder = () => {
                 <td className="p-2 w-20">SL No.</td>
                 <td className="p-2 w-28">Image</td>
                 <td className="p-2">Product</td>
-                <td className="p-2">Qantity</td>
+                <td className="p-2">Quantity</td>
                 <td className="p-2">Unit Price</td>
                 <td className="p-2">Total Price</td>
               </tr>
@@ -173,61 +167,57 @@ const PlaceOrder = () => {
       <div className="container row mx-auto my-5 pt-5 pb-5">
         <section className="col-lg-6  my-4 mx-auto form-design ">
           <h3 className="text-light text-black  text-3xl mb-4 fw-bold">
-            {" "}
             Provide Your Information:
           </h3>
           <form
             onSubmit={handleSubmit(cartDetails.length > 0 ? onSubmit : onAlert)}
           >
-            <p className="text-left">Customer Name:</p>
-            <input
-              className="w-100"
-              {...register("firstName")}
-              value={user.displayName}
-              placeholder="Enter your name"
-            />{" "}
-            <br />
-            <p className="text-left mt-3">Customer Email:</p>
-            <input
-              className="w-100"
-              type="email"
-              {...register("email")}
-              value={user.email}
-            />{" "}
-            <br />
-            <p className="text-left mt-3">Order Date:</p>
-            <input
-              className="w-100"
-              type="date"
-              {...register("orderDate")}
-              placeholder="Order Date"
-              id="theDate"
-            />{" "}
-            <br />
-            <p className="text-left mt-3">Phone Number:</p>
-            <input
-              className="w-100"
-              placeholder="Phone Number"
-              type="number"
-              {...register("phone")}
-            />{" "}
-            <br />
-            <p className="text-left mt-3">Delivery Address:</p>
-            <input
-              className="w-100"
-              placeholder="Address"
-              type="address"
-              {...register("address")}
-            />{" "}
-            <br />
-            {/* <input
-              className="w-25 mt-4  text-lg "
-              type="submit"
-              to="/mybooking"
-            /> */}
+            <div className="d-flex gap-3 w-100">
+              <div>
+                <p className="text-left">Customer Name:</p>
+                <p className="text-left mt-3">Customer Email:</p>
+                <p className="text-left mt-3">Order Date:</p>
+                <p className="text-left mt-3">Phone Number:</p>
+                <p className="text-left mt-3">Delivery Address:</p>
+              </div>
+              <div>
+                <input
+                  value={user.displayName}
+                  placeholder="Enter your name"
+                  {...register("firstName")}
+                />
+                <br />
+                <input
+                  type="email"
+                  value={user.email}
+                  placeholder="Enter your email"
+                  {...register("email")}
+                />
+                <br />
+                <input
+                  type="date"
+                  id="theDate"
+                  placeholder="Order Date"
+                  {...register("orderDate")}
+                />
+                <br />
+                <input
+                  type="number"
+                  placeholder="Phone Number"
+                  {...register("phone")}
+                />
+                <br />
+                <input
+                  type="address"
+                  placeholder="Address"
+                  {...register("address")}
+                />
+              </div>
+            </div>
+
             <div>
               <button
-                className="text-black mt-4 px-2 py-2 rounded-lg  text-lg bg-[#DCBB87] hover:bg-[#aa9265]"
+                className="text-black mt-4 px-2 py-2 rounded-lg  text-lg bg-[#aff6ff] hover:bg-[#48cbc9]"
                 onClick={triggerBkash}
               >
                 Pay with bKash

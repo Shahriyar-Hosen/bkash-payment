@@ -1,11 +1,12 @@
-.form-design input{
-    margin-top: 10px;
-    border: 2px solid #DCBB87 ;
-    border-radius: 10px;
-    width: 300px;
-    padding: 10px;
+.form-design input {
+  margin-top: 10px;
+  min-width: 300px;
+  border-bottom: 2px solid skyblue;
+}
+.form-design input:focus {
+  outline: none;
 }
 
-.alert{
-    background-color: blueviolet;
+.alert {
+  background-color: blueviolet;
 }
