@@ -1,73 +1,75 @@
 .logo-design {
-    width: 13%;
+  width: 100px;
+  margin-right: 20px;
 }
 
 .link-design {
-    text-transform: uppercase;
-    padding: 5px 10px;
-    position: relative;
-    color: #191A1D;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  position: relative;
+  color: #ffffff;
 }
 
 .link-design:hover {
-    color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .link-design::after {
-    content: " ";
-    background-color: #191A1D;
-    transition: 0.7s;
-    height: 0;
-    width: 100%;
-    left: 0;
-    position: absolute;
+  content: " ";
+  background-color: #ffffff;
+  transition: 0.3s;
+  height: 0;
+  width: 100%;
+  left: 0;
+  position: absolute;
 }
 
 .link-design:hover::after {
-    height: 100%;
-    z-index: -1000;
+  height: 100%;
+  z-index: -1000;
 }
 
 .header-de {
-    background-color: #ffffff;
-    color: #191A1D;
-    margin-right: auto;
-    z-index: 1000;
+  background-color: #000527;
+  color: #191a1d;
+  margin-right: auto;
+  z-index: 1000;
 }
 
 .dropdown-toggle::after {
-    border-top: 0.3rem solid #191A1D;
-    position: absolute;
-    right: 0;
+  border-top: 0.3rem solid #191a1d;
+  position: absolute;
+  right: 0;
 }
 
 .text-color {
-    color: #191A1D;
+  color: #191a1d;
 }
 
 .btn-all {
-    padding: .5rem 1rem;
-    background-color: #191A1D;
-    border: solid #191A1D;
-    border-radius: 25px;
-    font-weight: 600;
-    color: white;
+  padding: 0.3rem 1rem;
+  background-color: #191a1d;
+  border: solid #191a1d;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
 }
 
 .btn-all:hover {
-    background-color: white;
-    border-radius: 25px;
-    border: solid #191A1D;
-    font-weight: 600;
-    color: #191A1D;
-    transition: .5s ease-in-out;
+  background-color: white;
+  border-radius: 25px;
+  border: solid #191a1d;
+  font-weight: 600;
+  color: #191a1d;
+  transition: 0.5s ease-in-out;
 }
 
 .link-de {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .link-de:hover {
-    color: #191A1D;
+  color: #191a1d;
 }
