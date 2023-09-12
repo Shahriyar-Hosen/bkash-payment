@@ -1,33 +1,46 @@
 .bg-t {
-    background-color: rgba(6, 6, 41, 0.774);
+  background-color: rgba(6, 6, 41, 0.774);
 }
 
-/* .add-banner{
-    background-image: url('../../Images/add-service-banner.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-} */
 .box-design {
-    background-color: rgba(34, 34, 63, 0.842);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 98%;
+  min-height: 80vh;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .tittle {
-    color: #DCBB87;
-    margin-bottom: 25px;
-
+  color: #dcbb87;
+  margin-bottom: 25px;
 }
 
 .d-from {
-    background-color: #ffe4c1;
-    border-radius: 20px;
-    padding: 20px 30px;
-    width: 80%;
+  width: 80%;
 }
 
 .d-from input {
-    border: 1px solid #FF4A17;
-    padding: 10px;
-    border-radius: 5px;
+  border-bottom: 2px solid cyan;
+  padding: 10px;
+}
+.d-from input:focus {
+  outline: none;
+}
+
+.d-from button {
+  width: 100%;
+  background: cyan;
+  padding: 7px 0;
+  border-radius: 5px;
+}
+
+.d-from button:hover {
+  background: greenyellow;
+  transition: 0.5s all;
 }
