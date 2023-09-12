@@ -57,7 +57,7 @@ const ManageOrder = () => {
         </h1>
 
         <div className="sm:grid md:grid-cols-3 my-4 md:gap-4 grid-cols-2 sm:gap-1 justufy-center container">
-          {orders.map((order) => (
+          {orders.reverse().map((order) => (
             <ManageOrderCard
               key={order.id}
               order={order}

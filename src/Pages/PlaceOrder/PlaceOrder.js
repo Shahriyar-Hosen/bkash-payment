@@ -22,8 +22,11 @@ const PlaceOrder = () => {
     onSuccess: (data) => {
       console.log("on success", data); // this contains data from api response from onExecutePayment
       if (data) {
-        // onSubmit({ ...data });
         console.log("submitted");
+        navigate(redirect_url);
+        window.location.reload();
+      } else {
+        console.log("submitted but soothing happened!");
         navigate(redirect_url);
         window.location.reload();
       }
@@ -45,7 +48,7 @@ const PlaceOrder = () => {
       )
         .then((res) => res.json())
         .then((data) => {
-          console.log("on creatate payment", data);
+          console.log("on created payment", data);
           return { ...data };
         });
     },
@@ -57,10 +60,6 @@ const PlaceOrder = () => {
           method: "POST",
         }
       ).then((res) => res.json());
-      // .then((data) => {
-      //   console.log("on execute", data);
-      //   return { ...data };
-      // });
     },
   });
 
@@ -218,7 +217,8 @@ const PlaceOrder = () => {
             <div>
               <button
                 className="text-black mt-4 px-2 py-2 rounded-lg  text-lg bg-[#aff6ff] hover:bg-[#48cbc9]"
-                onClick={triggerBkash}
+                // onClick={triggerBkash}
+                type="submit"
               >
                 Pay with bKash
               </button>

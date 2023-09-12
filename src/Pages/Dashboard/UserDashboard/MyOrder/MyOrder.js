@@ -13,10 +13,9 @@ const MyOrder = () => {
       .then((res) => res.json())
       .then((data) => {
         const myOrders = data.filter((order) => order.email === user.email);
-        setOrders(myOrders);
+        setOrders(myOrders.reverse());
       });
   }, [user.email]);
-  // orders.map(order=> setOrder(order.myOrder))
 
   // Order cancel function
   const cancelOrder = (id) => {
@@ -50,7 +49,7 @@ const MyOrder = () => {
               key={order._id}
               order={order}
               cancelOrder={cancelOrder}
-            ></MyOrderCard>
+            />
           ))}
         </Row>
       </div>
