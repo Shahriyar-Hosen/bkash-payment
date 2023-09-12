@@ -1,24 +1,23 @@
-import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home/Home";
-import Error from "./Pages/Error/Error";
-import About from "./Pages/About/About";
-import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder";
+import "./App.css";
 import AuthProvider from "./Context/AuthProvider";
-import Login from "./Pages/Login/Login";
-import RequireAuth from "./Pages/RequireAuth/RequireAuth";
-import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
-import Products from "./Pages/Products/Products";
-import MyOrder from "./Pages/Dashboard/UserDashboard/MyOrder/MyOrder";
-import ManageOrder from "./Pages/Dashboard/AdminDashboard/ManageOrder/ManageOrder";
-import DashboardHome from "./Pages/Dashboard/DashboardHome/DashboardHome";
-import AddNewProduct from "./Pages/Dashboard/AdminDashboard/AddProduct/AddNewProduct";
-import ReviewProvide from "./Pages/Dashboard/UserDashboard/ReviewProvide/ReviewProvide";
-import SignUp from "./Pages/SignUp/SignUp";
-import MakeAdmin from "./Pages/Dashboard/AdminDashboard/MakeAdmin/MakeAdmin";
+import About from "./Pages/About/About";
 import Blog from "./Pages/Blog/Blog";
+import AddNewProduct from "./Pages/Dashboard/AdminDashboard/AddProduct/AddNewProduct";
+import MakeAdmin from "./Pages/Dashboard/AdminDashboard/MakeAdmin/MakeAdmin";
+import ManageOrder from "./Pages/Dashboard/AdminDashboard/ManageOrder/ManageOrder";
+import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
+import DashboardHome from "./Pages/Dashboard/DashboardHome/DashboardHome";
+import MyOrder from "./Pages/Dashboard/UserDashboard/MyOrder/MyOrder";
+import ReviewProvide from "./Pages/Dashboard/UserDashboard/ReviewProvide/ReviewProvide";
+import Error from "./Pages/Error/Error";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
+import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder";
 import ProductDetails from "./Pages/Products/ProductDetails/ProductDetails";
-// import Payment from "./Pages/Home/payment";
+import Products from "./Pages/Products/Products";
+import RequireAuth from "./Pages/RequireAuth/RequireAuth";
+import SignUp from "./Pages/SignUp/SignUp";
 
 function App() {
   return (
@@ -28,9 +27,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="home" element={<Home />} />
-            {/* <Route path="payment" element={<Payment />} /> */}
-            {/* <Route path="payment" element={<Payment />} /> */}
-            {/* <Route path='placeorder/:id' element={<RequireAuth><PlaceOrder /></RequireAuth>} /> */}
             <Route path="about" element={<About />} />
             <Route path="blog" element={<Blog />} />
             <Route
