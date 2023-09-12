@@ -1,4 +1,4 @@
-import { faBasketShopping } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Avatar } from "@mui/material";
 import React from "react";
@@ -60,7 +60,10 @@ const Header = () => {
                     to="/placeorder"
                   >
                     {" "}
-                    <FontAwesomeIcon icon={faBasketShopping} />{" "}
+                    <FontAwesomeIcon
+                      icon={faCartShopping}
+                      style={{ color: "#ffffff" }}
+                    />{" "}
                   </HashLink>
                 </>
               ) : (
