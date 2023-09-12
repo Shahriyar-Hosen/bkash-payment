@@ -223,7 +223,7 @@ const Home = () => {
       <Reviews />
 
       {/* Alert  */}
-      <AddToCard></AddToCard>
+      <AddToCard />
       <Footer />
     </div>
   );
