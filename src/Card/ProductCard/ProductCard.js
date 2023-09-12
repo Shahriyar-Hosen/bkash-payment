@@ -103,7 +103,7 @@ const ProductCard = (props) => {
               <>
                 <FontAwesomeIcon
                   icon={faEye}
-                  className="hover:text-red-400 text-xl me-2 cursor-pointer"
+                  className="hover:text-cyan-400 text-xl me-2 cursor-pointer"
                   onClick={() => viewProduct(_id)}
                 />
               </>
