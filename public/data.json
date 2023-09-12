@@ -1,56 +1,74 @@
 [
-    {
-        "id": 1,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-2.jpg",
-        "productName": "Red Digital Camera",
-        "price": 200
-    },
-    {
-        "id": 2,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-3.jpg",
-        "productName": "Axor Digital Camera",
-        "price": 300
-    },
-    {
-        "id": 3,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-8.jpg",
-        "productName": "Plus Coolpix SS3",
-        "price": 250
-    },
-    {
-        "id": 4,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-7.jpg",
-        "productName": "Retro Pro 600",
-        "price": 280
-    },
-    {
-        "id": 5,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-16.jpg",
-        "productName": "Silver DSLR Camera",
-        "price": 750
-    },
-    {
-        "id": 6,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-15.jpg",
-        "productName": "Smart 4k Camera",
-        "price": 650
-    },
-    {
-        "id": 7,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-10.jpg",
-        "productName": "Nikdi DSLR Camera",
-        "price": 750
-    },
-    {
-        "id": 8,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-11.jpg",
-        "productName": "Axor Digital Camera (pink)",
-        "price": 699
-    },
-    {
-        "id": 9,
-        "img": "https://template.hasthemes.com/garcia/garcia/assets/images/products/product-12.jpg",
-        "productName": "Neko Digital Camera",
-        "price": 599
-    }
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/9hpBfKj/Pride-and-Prejudice.jpg",
+    "productName": "Pride and Prejudice",
+    "price": 200
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/Zf1hM7K/Frankenstein.jpg",
+    "productName": "Frankenstein",
+    "price": 300
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/dGF1dg3/Jane-Eyre.jpg",
+    "productName": "Jane Eyre",
+    "price": 250
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/tmgZxwg/Moby-Dick.jpg",
+    "productName": "Moby-Dick",
+    "price": 280
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/WGm5ztw/The-Picture-of-Dorian-Gray.jpg",
+    "productName": "The Picture of Dorian Gray",
+    "price": 750
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/fk2Bbjx/The-Great-Gatsby.jpg",
+    "productName": "The Great Gatsby",
+    "price": 650
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/kMgVL9z/To-the-Lighthouse.jpg",
+    "productName": "To-the-Lighthouse",
+    "price": 750
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/Hz62swF/The-Hobbit.jpg",
+    "productName": "AThe-Hobbit",
+    "price": 699
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/zFV35Bt/The-Odyssey.jpg",
+    "productName": "The-Odyssey",
+    "price": 599
+  },
+  {
+    "productName": "The-Alchemist",
+    "description": "The-Alchemist des",
+    "img": "https://i.ibb.co/P9ty2Zd/The-Alchemist.jpg",
+    "price": "250"
+  },
+  {
+    "productName": "One-Hundred Years of Solitude",
+    "description": "this is description",
+    "img": "https://i.ibb.co/q5MzmtZ/One-Hundred-Years-of-Solitude.jpg",
+    "price": "449"
+  },
+  {
+    "productName": "The Catcher in the Rye",
+    "description": "this is description",
+    "img": "https://i.ibb.co/nDvDZGy/The-Catcher-in-the-Rye.jpg",
+    "price": "340"
+  }
 ]
