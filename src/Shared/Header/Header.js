@@ -68,18 +68,12 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <button className="btn-all mx-2">
-                    <Link className="link-de me-auto" to="/login">
-                      Login
-                    </Link>
-                  </button>
-                  <button className="btn-all mx-2">
-                    {" "}
-                    <Link className="link-de me-auto" to="/signup">
-                      {" "}
-                      Sign Up{" "}
-                    </Link>{" "}
-                  </button>
+                  <Link className="btn-all mx-2" to="/login">
+                    Login
+                  </Link>
+                  <Link className="btn-all mx-2" to="/signup">
+                    Sign Up
+                  </Link>
                 </>
               )}
             </Nav>
