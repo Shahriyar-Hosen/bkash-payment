@@ -27,13 +27,6 @@
 .App-link {
   color: #61dafb;
 }
-.cancel_btn {
-  background-color: #d82626;
-  padding: 5px 8px;
-  font-size: 15px;
-  color: white;
-  border-radius: 5px;
-}
 
 @keyframes App-logo-spin {
   from {
