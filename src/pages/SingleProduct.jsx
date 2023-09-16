@@ -3,12 +3,12 @@ import { MdSecurity } from "react-icons/md";
 import { TbReplace, TbTruckDelivery } from "react-icons/tb";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import FormatPrice from "../Helpers/FormatPrice";
 import AddToCart from "../components/AddToCart";
 import MyImage from "../components/MyImage";
 import PageNavigation from "../components/PageNavigation";
 import Star from "../components/Star";
 import { useProductContext } from "../context/productcontex";
-import FormatPrice from "../Helpers/FormatPrice";
 import { Container } from "../styles/Container";
 
 const API = "https://api.pujakaitem.com/api/products";
@@ -57,7 +57,7 @@ const SingleProduct = () => {
             <p className="product-data-price">
               MRP:
               <del>
-                <FormatPrice price={price + 250000} />
+                <FormatPrice price={price} />
               </del>
             </p>
             <p className="product-data-price product-data-real-price">

@@ -8,7 +8,7 @@ const Success = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/purchase-product")
+      .get("https://bkash-payment-server.vercel.app/api/purchase-product")
       .then((response) => {
         setPurchaseProduct(response?.data?.data);
       })

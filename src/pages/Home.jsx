@@ -5,7 +5,7 @@ const Home = ({ totalPrice, cart }) => {
   const pay = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/bkash/payment/create",
+        "https://bkash-payment-server.vercel.app/api/bkash/payment/create",
         { amount: totalPrice, orderId: 1, cart },
         { withCredentials: true }
       );
